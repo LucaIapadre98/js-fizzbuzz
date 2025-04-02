@@ -15,19 +15,22 @@
  // # DATI
  const numberMin = 1;
  const numberMax = 100; 
- const Fizz = 3;                                      //multiplo di 3
- const Buzz = 5;                                      //multiplo di 5
- const FizzBuzz = 15;                                    //multiplo di 3 * 5
+ const Fizz = 3;                                                      //multiplo di 3
+ const Buzz = 5;                                                      //multiplo di 5
+ const FizzBuzz = 15;                                                 //multiplo di 3 * 5
  let  outputText = ""                           
 
 
  //# SVOLGIMENTO
 for (let i = 1; i <=100; i++) {                                       //numero da 1 a 100
     console.log(i);                                                   //stampa il numero
-  if (i % Fizz ===0) console.log ("Fizz");                            //stampa "Fizz" se multiplo di 3  
-    outputText += "Fizz";                         
-  if (i % Buzz===0 ) console.log ("Buzz");                            //stampa "Buzz" se multiplo di 5
-  outputText += "Buzz";                              
-  if (i % Fizz===0  && i % Buzz===0 ) console.log("FizzBuzz");        //stampa "FizzBuzz" se multiplo di 3 e 5
-  outputText += "FizzBuzz"                                              
+  if (i % Fizz ===0)
+     console.log ("Fizz:", Fizz);                                     //stampa "Fizz" se multiplo di 3  
+     outputText += "Fizz";                         
+  if (i % Buzz===0 ) 
+     console.log ("Buzz:", Buzz)                                         //stampa "Buzz" se multiplo di 5
+     outputText += "Buzz";                              
+  if (i % Fizz===0  && i % Buzz===0 ) 
+     console.log("FizzBuzz:" , FizzBuzz);                                         //stampa "FizzBuzz" se multiplo di 3 e 5
+     outputText += "FizzBuzz"                                              
 }
