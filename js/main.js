@@ -15,16 +15,16 @@
  // # DATI
  const numberMin = 1;
  const numberMax = 100; 
- const multiples3 = Fizz;
- const multiples5 = Buzz;
- const multiples15 = FizzBuzz;
+ const Fizz = 3;                                      //multiplo di 3
+ const Buzz = 5;                                      //multiplo di 5
+ const FizzBuzz = 15;                                 //multiplo di 3 * 5
 
 
  //# SVOLGIMENTO
-
- for( let i = 1 ; i <= 100 ; i++) {            
-    console.log(i);    
-
-  }                                                
-
- 
+for (let i = 1; i <=100; i++) {     
+    console.log(i);                               
+  if(i % Fizz ===0 ) console.log( "Fizz" );   
+  if(i % Buzz ===0 ) console.log( "Buzz" );
+  else (i % Fizz ===0 && i % Buzz ===0) 
+   console.log( "FizzBuzz" ) ;                         
+}
