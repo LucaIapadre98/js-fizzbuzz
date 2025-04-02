@@ -21,10 +21,11 @@
 
 
  //# SVOLGIMENTO
-for (let i = 1; i <=100; i++) {     
-    console.log(i);                               
-  if(i % Fizz ===0 ) console.log( "Fizz" );   
-  if(i % Buzz ===0 ) console.log( "Buzz" );
-  else (i % Fizz ===0 && i % Buzz ===0) 
-   console.log( "FizzBuzz" ) ;                         
+for (let i = 1; i <=100; i++) {                                       //numero da 1 a 100
+    console.log(i);                                                  //stampa il numero
+  if (i % Fizz ===0) console.log ("Fizz");                          //stampa "Fizz" se multiplo di 3  
+  if (i % Buzz===0 ) console.log ("Buzz");                          //stampa "Buzz" se multiplo di 5
+  if (i % Fizz===0  && i % Buzz===0 ) console.log("FizzBuzz");     //stampa "FizzBuzz" se multiplo di 3 e 5
 }
+
+ //#OUTPUT
